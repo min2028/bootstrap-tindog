@@ -1,56 +1,40 @@
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Ubuntu', sans-serif; */
-
-/* Title Section */
+/* HTML elements */
 :root {
     --primary-color: #ff4c68;
     --secondary-color: #ef8172;
     --white: #fff;
 }
 
-#title {
-    background-color: var(--primary-color);
-    color: var(--white);
-}
-
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    font-weight: 900;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
     font-weight: bold;
-    line-height: 1.5;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 
 i {
     margin-right: 4px;
 }
 
+/* Containers */
+
 .container-fluid {
-    padding: 3% 15% 7%;
+    padding: 7% 15%;
 }
 
-/* Title Image */
-.iphone-dog {
-    width: 60%;
-    transform: rotate(25deg);
-    overflow: hidden;
-    position: absolute;
-    right: 30%;
+/* Sections */
+
+.colored-section {
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
-.iphone-dog-container {
-    position: relative;
+.white-section {
+    background-color: var(--white);
 }
 
 /* Navigation Bar  */
@@ -74,22 +58,49 @@ i {
     font-size: 1.2rem;
 }
 
+/* Heading Section */
+
+.main-heading {
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Title section */
+
+#title .container-fluid {
+    text-align: left;
+    padding-top: 3%;
+}
+
+.iphone-dog {
+    width: 60%;
+    transform: rotate(25deg);
+    overflow: hidden;
+    position: absolute;
+    right: 30%;
+}
+
+.iphone-dog-container {
+    position: relative;
+}
+
 .download-button {
     margin: 5% 3% 5% 0;
 }
 
 /* Feature Section */
+
 #features {
-    background-color: var(--white);
-    padding: 7rem 15rem;
-    text-align: center;
     position: relative;
     z-index: 1;
 }
 
 #features h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     font-size: 1.5rem;
 }
 
@@ -113,9 +124,7 @@ i {
 /* Testimonials Section */
 
 #testimonials {
-    text-align: center;
     background-color: var(--secondary-color);
-    color: var(--white);
 }
 
 #testimonials img {
@@ -124,13 +133,14 @@ i {
     margin: 20px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 /* Press section */
+
 #press {
-    text-align: center;
     background-color: var(--secondary-color);
     padding-bottom: 3%;
 }
@@ -141,8 +151,14 @@ i {
 }
 
 /* Pricing Section */
+
 #pricing {
     padding: 5%;
+}
+
+.price-amt {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing-col {
@@ -150,26 +166,15 @@ i {
 }
 
 /* CTA Section */
-#cta {
-    background-color: var(--primary-color);
-    padding: 7% 15%;
-    text-align: center;
-}
 
 #cta h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: var(--white);
     font-size: 3rem;
     line-height: 1.5;
 }
 
 /* Footer section */
-#footer {
-    background-color: var(--white);
-    text-align: center;
-    padding: 7% 15%;
-}
 
 #footer p {
     color: #8f8f8f;
